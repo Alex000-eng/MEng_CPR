@@ -1,0 +1,2 @@
+g++  $(CFLAGS) -c -o cprI2C.o cprI2C.cpp
+g++ cprScan_v2.cpp  $(CFLAGS) $(LDFLAGS) cprI2C.o ../comm/simUtil.o -lrt -o cprScan
